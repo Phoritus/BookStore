@@ -1,0 +1,38 @@
+/* Book Café App Styles */
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Page container for consistent layout */
+.page-container {
+  min-height: calc(100vh - 80px); /* Account for navbar height */
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Text shadow for hero text */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F2E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B4513;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7A3D11;
+}
