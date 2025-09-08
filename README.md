@@ -45,43 +45,7 @@ Go to `http://localhost:5173`
 - **PostCSS** for CSS processing
 - **Autoprefixer** for CSS vendor prefixes
 
-## 📦 Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd book-store-cafe
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   Edit `.env` with your configuration:
-   ```
-   VITE_API_URL=http://localhost:3001/api
-   VITE_APP_NAME=Book Café
-   VITE_APP_VERSION=1.0.0
-   ```
-
-
-4. **Start development server**
-  ```bash
-  npm run dev
-  ```
-   
-  > หากพบข้อความว่า `'vite' is not recognized as an internal or external command` ให้ติดตั้ง Vite ก่อนด้วยคำสั่ง:
-  > ```bash
-  > npm install vite --save-dev
-  > ```
-
-5. **เปิดเว็บเบราว์เซอร์**
-  ไปที่ `http://localhost:5173`
 
 ## 🏗️ Project Structure
 
