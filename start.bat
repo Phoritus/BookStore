@@ -2,27 +2,21 @@
 echo Starting Book Cafe Application...
 echo.
 
-REM Start Backend
-echo [1/2] Starting Backend Server...
-cd /d "c:\ProjectZero\backend"
-start "Backend Server" cmd /k "npm start"
-timeout /t 3 >nul
-
-REM Start Frontend
-echo [2/2] Starting Frontend Server...
-cd /d "c:\ProjectZero"
-start "Frontend Server" cmd /k "npm run dev"
+REM Start Frontend (Vite on port 5175)
+echo [1/1] Starting Frontend Server...
+cd /d "c:\BookStore"
+start "Frontend Server" cmd /k "npm run dev -- --port 5175"
 timeout /t 3 >nul
 
 echo.
 echo ========================================
-echo Book Cafe is starting up...
-echo Backend:  http://localhost:5000
-echo Frontend: http://localhost:5173
+echo Book Cafe UI is starting up...
+echo Frontend (UI-only): http://localhost:5175
 echo ========================================
 echo.
 echo Servers will open in separate windows.
-echo Wait a few seconds, then open your browser to:
-echo http://localhost:5173
+echo If a Windows Firewall prompt appears for Node.js, click "Allow access".
+echo After a few seconds, open your browser to:
+echo   http://localhost:5175
 echo.
 pause

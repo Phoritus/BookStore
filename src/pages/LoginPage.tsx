@@ -59,24 +59,7 @@ const LoginPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Test Credentials Info */}
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-sm font-medium text-blue-800">🧪 Test Credentials</h3>
-              <button
-                type="button"
-                onClick={fillTestData}
-                className="text-xs bg-blue-100 hover:bg-blue-200 px-2 py-1 rounded text-blue-700"
-              >
-                Fill Form
-              </button>
-            </div>
-            <div className="text-xs text-blue-700 space-y-1">
-              <div><strong>Email:</strong> test@test.com</div>
-              <div><strong>Phone:</strong> 0812345678</div>
-              <div><strong>Password:</strong> 123456</div>
-            </div>
-          </div>
+          
 
           <div className="card p-8">
             <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
