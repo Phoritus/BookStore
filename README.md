@@ -2,42 +2,43 @@
 
 A modern, user-friendly website for a Book Café with integrated member management, room booking system, and book lending information. Built with React.js, TypeScript, and a warm cream-brown design theme optimized for Gen Z users.
 
-## 🚀 Features
 
-### Core Functionality
-- **Member Management**: Registration with email, phone, and National ID validation
-- **Room Booking System**: Real-time availability, calendar interface, automatic pricing with discounts
-- **Book Lending Info**: Comprehensive information about in-café lending policies and procedures
-- **Authentication**: Secure JWT-based login with email + phone verification
-- **QR Code Confirmations**: Digital booking confirmations
-- **Responsive Design**: Mobile-first approach with beautiful UI
+## 📦 Installation
 
-### Room Booking Features
-- 4 private rooms (2x5-person, 2x10-person capacity)
-- 50 THB/hour pricing with 15% discount for 5+ hour bookings
-- Real-time availability checking
-- Same-day and advance booking support
-- Automated email confirmations
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd book-store-cafe
+```
 
-### Design Highlights
-- **Color Scheme**: Warm cream, rich brown, and gold accents
-- **Typography**: Inter (body) + Playfair Display (headings)
-- **UX**: Intuitive navigation and smooth animations
-- **Accessibility**: WCAG 2.1 AA compliant design
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## 🛠️ Tech Stack
+### 3. Set up environment variables
+```bash
+cp .env.example .env
+```
+Edit `.env` with your configuration:
+```
+VITE_API_URL=http://localhost:3001/api
+VITE_APP_NAME=Book Café
+VITE_APP_VERSION=1.0.0
+```
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite** for fast development and building
-- **Tailwind CSS** for styling with custom color palette
-- **React Router DOM** for navigation
-- **React Hook Form** + Zod for form validation
-- **Zustand** for state management
-- **Date-fns** for date manipulation
-- **Lucide React** for icons
-- **React Hot Toast** for notifications
+### 4. Start development server
+```bash
+npm run dev
+```
 
+> If you see `'vite' is not recognized as an internal or external command`, install Vite first:
+> ```bash
+> npm install vite --save-dev
+> ```
+
+### 5. Open your browser
+Go to `http://localhost:5173`
 ### Development Tools
 - **ESLint** for code linting
 - **TypeScript** for type safety
@@ -68,13 +69,19 @@ A modern, user-friendly website for a Book Café with integrated member manageme
    VITE_APP_VERSION=1.0.0
    ```
 
-4. **Start development server**
-   ```bash
-   npm run dev
-   ```
 
-5. **Open your browser**
-   Navigate to `http://localhost:5173`
+4. **Start development server**
+  ```bash
+  npm run dev
+  ```
+   
+  > หากพบข้อความว่า `'vite' is not recognized as an internal or external command` ให้ติดตั้ง Vite ก่อนด้วยคำสั่ง:
+  > ```bash
+  > npm install vite --save-dev
+  > ```
+
+5. **เปิดเว็บเบราว์เซอร์**
+  ไปที่ `http://localhost:5173`
 
 ## 🏗️ Project Structure
 
